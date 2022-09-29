@@ -14,6 +14,7 @@ import { MainMenuScreen } from "./screens/main-menu.screen";
 import { DifficultyLevelScreen } from "./screens/difficulty-level.screen";
 import { TimeLimitScreen } from "./screens/time-limit.screen";
 import { MinSwapsScreen } from "./screens/min-swaps.screen";
+import { ImgCategory } from "./screens/img-category";
 import Header from './components/Navbar';
 
 import "./styles.css";
@@ -38,7 +39,7 @@ function App() {
           <Switch location={item}>
             <Route path={gameModeUrlMap[gameMode.minSwaps]}>
               <MinSwapsScreen />
-            </Route>
+            </Route> 
 
             <Route path={gameModeUrlMap[gameMode.timeLimit]}>
               <TimeLimitScreen />
@@ -54,6 +55,10 @@ function App() {
 
             <Route path="/puzzle-game" exact>
               <MainMenuScreen />
+            </Route>
+
+            <Route path="/img-category" exact>
+              <ImgCategory />
             </Route>
           </Switch>
         </animated.div>

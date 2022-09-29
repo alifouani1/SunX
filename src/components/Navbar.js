@@ -14,7 +14,7 @@ const Header = () => {
         <nav>
           <div className="nav-links">
             <Link to="/home">Home</Link>
-            <Link to="/img-gallery">ImageGallery</Link>
+            <Link to="/img-category">ImageGallery</Link>
             {/* <Link to="/categories">Categories</Link> */}
             {/* <Link>
               <DropdownButton
