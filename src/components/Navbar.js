@@ -14,6 +14,7 @@ const Header = () => {
         <nav>
           <div className="nav-links">
             <Link to="/home">Home</Link>
+            <Link to="/img-gallery">ImageGallery</Link>
             {/* <Link to="/categories">Categories</Link> */}
             {/* <Link>
               <DropdownButton
@@ -25,14 +26,14 @@ const Header = () => {
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
               </DropdownButton>
             </Link> */}
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact Us</Link>
-            <Link to="/login" className="login">
+            <Link to="/puzzle-game">PuzzleGame</Link>
+            <Link to="/about">Take A Quiz</Link>
+            {/* <Link to="/login" className="login">
               Login
             </Link>
             <Link to="/signup" className="signup">
               Signup
-            </Link>
+            </Link> */}
           </div>
         </nav>
       </div>

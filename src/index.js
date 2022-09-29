@@ -52,7 +52,7 @@ function App() {
               <ModeSelectScreen />
             </Route>
 
-            <Route path="/" exact>
+            <Route path="/puzzle-game" exact>
               <MainMenuScreen />
             </Route>
           </Switch>
