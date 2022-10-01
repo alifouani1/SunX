@@ -116,3 +116,7 @@ button svg {
   justify-content: space-around;
   text-decoration: none;
 }
+
+.links * {
+  text-decoration: none;
+}
