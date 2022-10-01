@@ -107,7 +107,7 @@ export const Quiz = () => {
       </div>
       <div className="links">
         <Link to="/puzzle-game">PuzzleGame</Link>
-        <Link to="/quiz-option"> Quiz</Link>
+        <Link to="/quiz-option">New Quiz</Link>
       </div>
     </div>
   );
