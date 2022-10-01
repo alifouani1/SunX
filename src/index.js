@@ -15,6 +15,8 @@ import { DifficultyLevelScreen } from "./screens/difficulty-level.screen";
 import { TimeLimitScreen } from "./screens/time-limit.screen";
 import { MinSwapsScreen } from "./screens/min-swaps.screen";
 import { ImgCategory } from "./screens/img-category";
+import { Quiz } from "./screens/quiz";
+import  Home  from "./screens/Home";
 import Header from './components/Navbar';
 
 import "./styles.css";
@@ -59,6 +61,12 @@ function App() {
 
             <Route path="/img-category" exact>
               <ImgCategory />
+            </Route>
+            <Route path="/quiz" exact>
+              <Quiz />
+            </Route>
+            <Route path="/" exact>
+              <Home />
             </Route>
           </Switch>
         </animated.div>

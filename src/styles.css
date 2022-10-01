@@ -5,9 +5,10 @@ body {
 }
 
 body {
-  background-color: #607d8b;
+  /* background-color: #607d8b; */
+  background-color: blueviolet;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 * {
@@ -20,7 +21,7 @@ body {
 
 .App {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .row {

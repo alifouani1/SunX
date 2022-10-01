@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
         <nav>
           <div className="nav-links">
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
             <Link to="/img-category">ImageGallery</Link>
             {/* <Link to="/categories">Categories</Link> */}
             {/* <Link>
@@ -27,7 +27,7 @@ const Header = () => {
               </DropdownButton>
             </Link> */}
             <Link to="/puzzle-game">PuzzleGame</Link>
-            <Link to="/about">Take A Quiz</Link>
+            <Link to="/quiz">Take A Quiz</Link>
             {/* <Link to="/login" className="login">
               Login
             </Link>
