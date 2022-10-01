@@ -1,42 +1,48 @@
 import React, { useState } from "react";
 import "../styles/quiz.css";
+import { Link } from "react-router-dom";
 
 export const Quiz = () => {
-  const questions = [
+  var questions = [
     {
-      questionText: "What is the capital of France?",
+      id: 0,
+      questionText: "When was James Webb Space Telescope launched?",
       answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false },
+        { answerText: "20 December, 2021", isCorrect: false },
+        { answerText: "18 December, 2021", isCorrect: false },
+        { answerText: "25 December, 2021", isCorrect: true },
+        { answerText: "15 December, 2021", isCorrect: false },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      id: 1,
+      questionText: "Which rocket launched James Webb Space Telescope?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "Ariane 4", isCorrect: false },
+        { answerText: "Ariane 5", isCorrect: true },
+        { answerText: "Apollo 11", isCorrect: false },
+        { answerText: "Apollo 17", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      id: 2,
+      questionText:
+        "What shape is the James Webb Space Telescope Primary Mirror?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "Hexagonal-shaped", isCorrect: true },
+        { answerText: "Rectangular", isCorrect: false },
+        { answerText: "Circular", isCorrect: false },
+        { answerText: "Square-shaped", isCorrect: false },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      id: 3,
+      questionText: " What is the telescope’s primary mirror material?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "Iron", isCorrect: false },
+        { answerText: "Metal", isCorrect: false },
+        { answerText: "Aluminum", isCorrect: false },
+        { answerText: "Beryllium coated with Gold", isCorrect: true },
       ],
     },
   ];
@@ -44,13 +50,24 @@ export const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+  // const getNumber = () => {
+  //   console.log(questions);
+  //   var random = Math.floor(Math.random() * (questions.length + 1));
+  //   var number = random;
+
+  //   questions = questions.filter((question) => question.id != number);
+  //   console.log(questions, number);
+  //   return number;
+  // };
+
+  // getNumber();
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
-
     const nextQuestion = currentQuestion + 1;
+
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
@@ -68,7 +85,7 @@ export const Quiz = () => {
           <>
             <div className="question-section">
               <div className="question-count">
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
+                <span>Question {currentQuestion}</span>/{questions.length}
               </div>
               <div className="question-text">
                 {questions[currentQuestion].questionText}
@@ -87,6 +104,10 @@ export const Quiz = () => {
             </div>
           </>
         )}
+      </div>
+      <div className="links">
+        <Link to="/puzzle-game">PuzzleGame</Link>
+        <Link to="/quiz-option">New Quiz</Link>
       </div>
     </div>
   );

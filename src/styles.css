@@ -6,8 +6,9 @@ body {
 
 body {
   /* background-color: #607d8b; */
-  background-color: blueviolet;
+  background-color: #260136;
   margin: 0;
+  height: calc(100vh - 100px);
   /* overflow: hidden; */
 }
 

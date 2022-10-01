@@ -7,7 +7,7 @@ import {
   MemoryRouter as Router,
   Route,
   Switch,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 
 import { MainMenuScreen } from "./screens/main-menu.screen";
@@ -16,22 +16,25 @@ import { TimeLimitScreen } from "./screens/time-limit.screen";
 import { MinSwapsScreen } from "./screens/min-swaps.screen";
 import { ImgCategory } from "./screens/img-category";
 import { Quiz } from "./screens/quiz";
-import  Home  from "./screens/Home";
-import Header from './components/Navbar';
+import Home from "./screens/Home";
+import Header from "./components/Navbar";
 
 import "./styles.css";
 import store from "./store";
 import { ModeSelectScreen } from "./screens/mode-select.screen";
 import { gameModeUrlMap, gameMode } from "./store/constants";
 import { Navbar } from "./components/navbar.component";
+import { DifficultyLevelScreenQuiz } from "./screens/quizOption";
+import QuizM from "./screens/quizM";
+import QuizH from "./screens/quizH";
 
 function App() {
   const location = useLocation();
-  const transitions = useTransition(location, location => location.pathname, {
+  const transitions = useTransition(location, (location) => location.pathname, {
     from: { transform: "translateX(100vw)" },
     enter: { transform: "translateX(0)" },
     leave: { transform: "translateX(-100vw)" },
-    delay: 500
+    delay: 500,
   });
 
   return (
@@ -41,7 +44,7 @@ function App() {
           <Switch location={item}>
             <Route path={gameModeUrlMap[gameMode.minSwaps]}>
               <MinSwapsScreen />
-            </Route> 
+            </Route>
 
             <Route path={gameModeUrlMap[gameMode.timeLimit]}>
               <TimeLimitScreen />
@@ -65,6 +68,15 @@ function App() {
             <Route path="/quiz" exact>
               <Quiz />
             </Route>
+            <Route path="/quiz-m" exact>
+              <QuizM />
+            </Route>
+            <Route path="/quiz-h" exact>
+              <QuizH />
+            </Route>
+            <Route path="/quiz-option" exact>
+              <DifficultyLevelScreenQuiz />
+            </Route>
             <Route path="/" exact>
               <Home />
             </Route>
@@ -81,7 +93,7 @@ const ReduxedApp = () => {
   return (
     <Provider store={store}>
       <Router>
-        <Header/>
+        <Header />
         <App />
       </Router>
     </Provider>

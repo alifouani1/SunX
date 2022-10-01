@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { Component }  from 'react';
+import React, { Component } from "react";
 import "../styles/Navbar.css";
 //import navlink
 // import { NavLink } from "react-router-dom";
@@ -27,7 +27,7 @@ const Header = () => {
               </DropdownButton>
             </Link> */}
             <Link to="/puzzle-game">PuzzleGame</Link>
-            <Link to="/quiz">Take A Quiz</Link>
+            <Link to="/quiz-option">Take A Quiz</Link>
             {/* <Link to="/login" className="login">
               Login
             </Link>
