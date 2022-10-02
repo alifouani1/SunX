@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
 const StyledBackButton = styled.button`
-  background-color: white;
+  background-color: transparent;
   border: none;
   font-size: 2.2em;
   line-height: 60px;

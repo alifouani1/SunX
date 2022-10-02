@@ -9,7 +9,7 @@ body {
   background-color: #260136;
   margin: 0;
   height: calc(100vh - 100px);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 * {
@@ -31,7 +31,7 @@ a{
 
 .App {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .row {
