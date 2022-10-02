@@ -6,22 +6,23 @@ export const Quiz = () => {
   var questions = [
     {
       id: 0,
+      questionText:
+        "The telescope is named after ______________, was the administrator of NASA.",
+      answerOptions: [
+        { answerText: "Elon Musk", isCorrect: false },
+        { answerText: "Mahaveer Lal", isCorrect: false },
+        { answerText: "James E. Web", isCorrect: true },
+        { answerText: "None of these", isCorrect: false },
+      ],
+    },
+    {
+      id: 1,
       questionText: "When was James Webb Space Telescope launched?",
       answerOptions: [
         { answerText: "20 December, 2021", isCorrect: false },
         { answerText: "18 December, 2021", isCorrect: false },
         { answerText: "25 December, 2021", isCorrect: true },
         { answerText: "15 December, 2021", isCorrect: false },
-      ],
-    },
-    {
-      id: 1,
-      questionText: "Which rocket launched James Webb Space Telescope?",
-      answerOptions: [
-        { answerText: "Ariane 4", isCorrect: false },
-        { answerText: "Ariane 5", isCorrect: true },
-        { answerText: "Apollo 11", isCorrect: false },
-        { answerText: "Apollo 17", isCorrect: false },
       ],
     },
     {
@@ -37,12 +38,12 @@ export const Quiz = () => {
     },
     {
       id: 3,
-      questionText: " What is the telescope’s primary mirror material?",
+      questionText: " The James Webb Space Telescope will be orbiting:",
       answerOptions: [
-        { answerText: "Iron", isCorrect: false },
-        { answerText: "Metal", isCorrect: false },
-        { answerText: "Aluminum", isCorrect: false },
-        { answerText: "Beryllium coated with Gold", isCorrect: true },
+        { answerText: "Nothing", isCorrect: false },
+        { answerText: "Earth", isCorrect: false },
+        { answerText: "Moon", isCorrect: false },
+        { answerText: "Sun", isCorrect: true },
       ],
     },
   ];
@@ -50,17 +51,6 @@ export const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  // const getNumber = () => {
-  //   console.log(questions);
-  //   var random = Math.floor(Math.random() * (questions.length + 1));
-  //   var number = random;
-
-  //   questions = questions.filter((question) => question.id != number);
-  //   console.log(questions, number);
-  //   return number;
-  // };
-
-  // getNumber();
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {

@@ -31,30 +31,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="section">
-        <div className="section-text">
-          <h1>
-            <span className="title">When did it luanch?</span>
-          </h1>
-          <p className="desc">
-            Launched on December 25, 2021, JWST began producing its first
-            amazing science images in July 2022.
-          </p>
-        </div>
-      </div>
-
-      <div className="section">
-        <div className="section-text">
-          <h1>
-            <span className="title">What do the images look like?</span>
-          </h1>
-          <p className="desc">
-            These pictures are sharper and more sensitive than those from prior
-            telescopes and will undoubtedly enable numerous new discoveries.
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

@@ -35,6 +35,11 @@ body {
   /* justify-content: space-evenly; */
 }
 
+.quiz * {
+  margin: 2px;
+  border-radius: 15px;
+}
+
 .score-section {
   display: flex;
   font-size: 24px;
@@ -82,7 +87,6 @@ button {
   font-size: 16px;
   color: #ffffff;
   background-color: #ac3c4e;
-  border-radius: 15px;
   display: flex;
   padding: 5px;
   justify-content: flex-start;
@@ -119,4 +123,8 @@ button svg {
 
 .links * {
   text-decoration: none;
+  border: solid 2px #260136;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background-color: #6c1348;
 }

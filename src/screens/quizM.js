@@ -6,12 +6,13 @@ export default function QuizM() {
   var questions = [
     {
       id: 0,
-      questionText: "When was James Webb Space Telescope launched?",
+      questionText:
+        "The James Webb Space Telescope (JWST) is a space telescope developed by NASA with contributions from the... was James Webb Space Telescope launched?",
       answerOptions: [
-        { answerText: "20 December, 2021", isCorrect: false },
-        { answerText: "18 December, 2021", isCorrect: false },
-        { answerText: "25 December, 2021", isCorrect: true },
-        { answerText: "15 December, 2021", isCorrect: false },
+        { answerText: "European Space Agency", isCorrect: false },
+        { answerText: "Canadian Space Agency", isCorrect: false },
+        { answerText: "Both first and second", isCorrect: true },
+        { answerText: "Japan Space Agency", isCorrect: false },
       ],
     },
     {
@@ -26,13 +27,12 @@ export default function QuizM() {
     },
     {
       id: 2,
-      questionText:
-        "What shape is the James Webb Space Telescope Primary Mirror?",
+      questionText: "Which of the following manufacturer of (JWST)?",
       answerOptions: [
-        { answerText: "Hexagonal-shaped", isCorrect: true },
-        { answerText: "Rectangular", isCorrect: false },
-        { answerText: "Circular", isCorrect: false },
-        { answerText: "Square-shaped", isCorrect: false },
+        { answerText: "Northrop Grumman", isCorrect: false },
+        { answerText: "Ball Aerospace", isCorrect: false },
+        { answerText: "Space X", isCorrect: false },
+        { answerText: "First and Second", isCorrect: true },
       ],
     },
     {
@@ -50,17 +50,6 @@ export default function QuizM() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  // const getNumber = () => {
-  //   console.log(questions);
-  //   var random = Math.floor(Math.random() * (questions.length + 1));
-  //   var number = random;
-
-  //   questions = questions.filter((question) => question.id != number);
-  //   console.log(questions, number);
-  //   return number;
-  // };
-
-  // getNumber();
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {

@@ -6,43 +6,47 @@ export default function QuizH() {
   var questions = [
     {
       id: 0,
-      questionText: "When was James Webb Space Telescope launched?",
+      questionText:
+        "Which of the following type Transporter band used in JWST?",
       answerOptions: [
-        { answerText: "20 December, 2021", isCorrect: false },
-        { answerText: "18 December, 2021", isCorrect: false },
-        { answerText: "25 December, 2021", isCorrect: true },
-        { answerText: "15 December, 2021", isCorrect: false },
+        {
+          answerText: "S-band, telemetry, tracking, and control",
+          isCorrect: false,
+        },
+        { answerText: "ka-band, data acquisition", isCorrect: false },
+        { answerText: "Both of the above", isCorrect: true },
+        { answerText: "L-band, acquisition", isCorrect: false },
       ],
     },
     {
       id: 1,
-      questionText: "Which rocket launched James Webb Space Telescope?",
+      questionText:
+        "JWST in the Optical Telescope Element, consists of _____ hexagonal mirror segments.",
       answerOptions: [
-        { answerText: "Ariane 4", isCorrect: false },
-        { answerText: "Ariane 5", isCorrect: true },
-        { answerText: "Apollo 11", isCorrect: false },
-        { answerText: "Apollo 17", isCorrect: false },
+        { answerText: "08 Hexagonal", isCorrect: false },
+        { answerText: "18 Hexagonal", isCorrect: true },
+        { answerText: "28 Hexagonal", isCorrect: false },
+        { answerText: "78 Hexagonal", isCorrect: false },
       ],
     },
     {
       id: 2,
-      questionText:
-        "What shape is the James Webb Space Telescope Primary Mirror?",
+      questionText: "What is the mirror diameter of JWST?",
       answerOptions: [
-        { answerText: "Hexagonal-shaped", isCorrect: true },
-        { answerText: "Rectangular", isCorrect: false },
-        { answerText: "Circular", isCorrect: false },
-        { answerText: "Square-shaped", isCorrect: false },
+        { answerText: "21 ft 4 inch", isCorrect: true },
+        { answerText: "21 ft", isCorrect: false },
+        { answerText: "31 ft 4 in", isCorrect: false },
+        { answerText: "01 ft 4 in", isCorrect: false },
       ],
     },
     {
       id: 3,
-      questionText: " What is the telescope’s primary mirror material?",
+      questionText: " James Webb Space Telescope Development began in...",
       answerOptions: [
-        { answerText: "Iron", isCorrect: false },
-        { answerText: "Metal", isCorrect: false },
-        { answerText: "Aluminum", isCorrect: false },
-        { answerText: "Beryllium coated with Gold", isCorrect: true },
+        { answerText: "2020", isCorrect: false },
+        { answerText: "2000", isCorrect: false },
+        { answerText: "1990", isCorrect: false },
+        { answerText: "1996", isCorrect: true },
       ],
     },
   ];
@@ -50,17 +54,6 @@ export default function QuizH() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  // const getNumber = () => {
-  //   console.log(questions);
-  //   var random = Math.floor(Math.random() * (questions.length + 1));
-  //   var number = random;
-
-  //   questions = questions.filter((question) => question.id != number);
-  //   console.log(questions, number);
-  //   return number;
-  // };
-
-  // getNumber();
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
