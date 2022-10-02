@@ -60,14 +60,14 @@ export const MinSwapsScreen = () => {
             <h1 style={{ color: "green" }}>
               All tiles are aligned, You won!😃👍
             </h1>
-            <Link to="/">
+            <Link to="/puzzle-game" onClick={() => window.location.reload()}>
               <Button>New Game</Button>
             </Link>
           </>
         ) : isThresholdExceeded ? (
           <>
-            <h2>Max Number of Swaps Exceeded, Shame on you loser👿👎</h2>
-            <Link to="/">
+            <h2>Max Number of Swaps Exceeded</h2>
+            <Link to="/puzzle-game" onClick={() => window.location.reload()}>
               <Button>New Game</Button>
             </Link>
           </>

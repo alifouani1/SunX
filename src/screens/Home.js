@@ -21,8 +21,8 @@ import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
   "../webb-imgs/auroras.jpg",
-  "https://react-slideshow.herokuapp.com/images/slide_3.jpg",
-  "https://react-slideshow.herokuapp.com/images/slide_4.jpg",
+  // "https://react-slideshow.herokuapp.com/images/slide_3.jpg",
+  // "https://react-slideshow.herokuapp.com/images/slide_4.jpg",
 ];
 
 const properties = {

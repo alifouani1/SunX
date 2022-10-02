@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
 const StyledBackButton = styled.button`
-  background-color: transparent;
+  background-color: white;
   border: none;
   font-size: 2.2em;
   line-height: 60px;
@@ -16,6 +16,6 @@ export const BackButton = () => {
   const history = useHistory();
 
   return (
-    <StyledBackButton onClick={() => history.goBack()}>&lt;</StyledBackButton>
+    <StyledBackButton onClick={() => history.goBack()}>Back</StyledBackButton>
   );
 };

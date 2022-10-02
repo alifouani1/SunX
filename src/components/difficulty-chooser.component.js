@@ -19,7 +19,6 @@ export const DifficultyChooser = props => {
   const selectedGameMode = useSelectedGameMode();
 
   const imgDimensions = getMeta();
-  console.log(imgDimensions);
 
   const handleClick = useCallback(
     e => {

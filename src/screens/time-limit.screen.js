@@ -55,14 +55,14 @@ export const TimeLimitScreen = () => {
         {areTilesAligned ? (
           <>
             <h1 style={{ color: "green" }}>Well Done!</h1>
-            <Link to="/puzzle-game">
+            <Link to="/puzzle-game" onClick={() => window.location.reload()}>
               <Button>New Game</Button>
             </Link>
           </>
         ) : timeLeft === 0 ? (
           <>
             <ErrorText>Game over!</ErrorText>
-            <Link to="/puzzle-game">
+            <Link to="/puzzle-game" onClick={() => window.location.reload()}>
               <Button>New Game</Button>
             </Link>
           </>
