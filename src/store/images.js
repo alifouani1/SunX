@@ -5,7 +5,7 @@ export const images = [
     
     `https://imageio.forbes.com/specials-images/imageserve/63034506593d7b2d3cf3e7ef/Dusty--barred-spiral-galaxy-NGC-1365-as-captured-by-JWST-s-MIRI-instrument--and/960x0.jpg?format=jpg&width=960`,
 
-    `https://images.immediate.co.uk/production/volatile/sites/4/2022/07/JWST-image-showing-eight-point-stars-a6d61b1.jpg?resize=960,413?quality=90&resize=940,400`
+    `https://images.immediate.co.uk/production/volatile/sites/4/2022/07/JWST-image-showing-eight-point-stars-a6d61b1.jpg?resize=960,413?quality=90&resize=940,400`,
 
     `https://www.siliconrepublic.com/wp-content/uploads/2022/06/Webb_wallpaper-718x523.jpg`
     
