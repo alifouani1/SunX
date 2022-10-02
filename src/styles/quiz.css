@@ -13,7 +13,7 @@ body {
 
 .app {
   /* background-color: #7cc6fe; */
-  background-color: blueviolet;
+  background-color: 260136;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,8 +110,7 @@ button:focus {
 button svg {
   margin-right: 5px;
 }
-quiz * {
-}
+
 .links {
   display: flex;
   width: 450px;
@@ -119,11 +118,16 @@ quiz * {
   justify-content: space-evenly;
 }
 .links * {
-  background-color: #260136;
+  background-color: #6c1348;
   padding: 5px 15px;
   border-radius: 10px;
+  border-color: white;
+  border: solid 1px;
 }
 .answer-section * {
   margin: 4px;
   border-radius: 10px;
+  background-color: #6c1348;
+  border-color: white;
+  border: solid 1px;
 }

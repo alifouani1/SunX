@@ -96,16 +96,7 @@ const Home = () => {
           </p>
         </div>
         <div className="section-1-img">
-<<<<<<< Updated upstream
-          <div className="img">
-            {/* <img
-              src={require("../webb-imgs/auroras.jpg")}
-              width={100}
-              height={100}
-            /> */}
-          </div>
-        </div>
-=======
+
           <div className="slide-container">
             <Slide>
               {slideImages.map((slideImage, index) => (
@@ -143,7 +134,6 @@ const Home = () => {
             <div className="each-slide">
               <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
                 <img src={require("../webb-imgs/jwst2.jpg")} alt="auroras" />
-
               </div>
             </div>
             <div className="each-slide">
@@ -158,7 +148,6 @@ const Home = () => {
             </div>
           </Slide>
         </div>
->>>>>>> Stashed changes
       </div>
     </div>
   );

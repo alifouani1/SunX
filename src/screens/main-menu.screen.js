@@ -31,7 +31,7 @@ const ButtonsContainer = styled.div`
   justify-content: center;
   border-radius: 7px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #6c1348;
   flex: 1;
 `;
 

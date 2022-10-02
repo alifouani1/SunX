@@ -24,7 +24,7 @@ const ButtonsContainer = styled.div`
   justify-content: center;
   border-radius: 7px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #6c1348;
 `;
 
 const FixWidthButton = styled(Button)`
@@ -36,7 +36,7 @@ export const ModeSelectScreen = () => {
   useSelectedGameMode();
 
   const handleClick = useCallback(
-    e => {
+    (e) => {
       const selectedGameMode = e.target.getAttribute("data-mode");
       dispatch({ type: SELECT_GAME_MODE, payload: selectedGameMode });
     },
