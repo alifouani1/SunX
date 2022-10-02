@@ -6,7 +6,7 @@ import "../styles/imgCat.css";
 let slides = [
   //get imgs from imgs folder
   <img
-    src={require("../webb-imgs/auroras.jpg")}
+    src={require("../webb-imgs/jwst_sample_img.jpg")}
     alt="1"
     width={550}
     height={350}
@@ -54,29 +54,29 @@ let slides = [
     height={350}
   />,
   <img
+  src={require("../webb-imgs/auroras.jpg")}
+  alt="9"
+  width={550}
+  height={350}
+  />,
+  <img
     src={require("../webb-imgs/phantomGalaxy.jpg")}
-    alt="9"
+    alt="10"
     width={550}
     height={350}
   />,
-  // <img
-  //   src={require("../webb-imgs/hubandWebb.jpg")}
-  //   alt="10"
-  //   width={550}
-  //   height={350}
-  // />,
-  // <img
-  //   src={require("../webb-imgs/auroras-1.jpg")}
-  //   alt="11"
-  //   width={550}
-  //   height={350}
-  // />,
-  // <img
-  //   src={require("../webb-imgs/blackholes-1.jpg")}
-  //   alt="12"
-  //   width={550}
-  //   height={350}
-  // />,
+  <img
+    src={require("../webb-imgs/cartwheel.jpg")}
+    alt="11"
+    width={550}
+    height={350}
+  />,
+  <img
+    src={require("../webb-imgs/dyingStars.jpg")}
+    alt="12"
+    width={550}
+    height={350}
+  />,
   // <img
   //   src={require("../webb-imgs/dryingstars.jpg")}
   //   alt="13"

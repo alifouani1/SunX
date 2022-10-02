@@ -40,76 +40,6 @@ const properties = {
 const Home = () => {
   return (
     <div className="home">
-      {/* <AnimatedText
-        type="words" // animate words or chars
-        animation={{
-          x: "200px",
-          y: "-20px",
-          scale: 1.1,
-          ease: "ease-in-out",
-        }}
-        animationType="float"
-        interval={0.06}
-        duration={0.8}
-        tag="p"
-        className="animated-paragraph"
-        includeWhiteSpaces
-        threshold={0.1}
-        rootMargin="20%"
-      >
-        Welcome to the JWST Guide?
-      </AnimatedText>
-      <AnimatedText
-        type="words" // animate words or chars
-        animation={{
-          x: "200px",
-          y: "-20px",
-          scale: 1.1,
-          ease: "ease-in-out",
-        }}
-        animationType="float"
-        interval={0.06}
-        duration={0.8}
-        tag="p"
-        className="animated-paragraph"
-        includeWhiteSpaces
-        threshold={0.1}
-        rootMargin="20%"
-      >
-        The James Webb Space Telescope (JWST) is the largest, most powerful, and
-        most complex space science telescope ever built. Webb will solve
-        mysteries in our solar system, look beyond to distant worlds around
-        other stars, and probe the mysterious structures and origins of our
-        universe and our place in it.
-      </AnimatedText> */}
-      {/* <div className="section">
-        <div className="section-text">
-          <h1>
-            <span className="title">What is JWST?</span>
-          </h1>
-          <p className="desc">
-            The James Webb Space Telescope (JWST) is the largest, most powerful,
-            and most complex space science telescope ever built. Webb will solve
-            mysteries in our solar system, look beyond to distant worlds around
-            other stars, and probe the mysterious structures and origins of our
-            universe and our place in it.
-          </p>
-        </div>
-        <div className="section-1-img">
-
-          <div className="slide-container">
-            <Slide>
-              {slideImages.map((slideImage, index) => (
-                <div className="each-slide" key={index}>
-                  <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-                    <span>{slideImage.caption}</span>
-                  </div>
-                </div>
-              ))}
-            </Slide>
-          </div>
-        </div>
-      </div> */}
       <div className="section">
         <div className="section-text">
           <h1>
@@ -139,11 +69,6 @@ const Home = () => {
             <div className="each-slide">
               <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
                 <img src={require("../webb-imgs/jwst3.jpg")} alt="auroras" />
-              </div>
-            </div>
-            <div className="each-slide">
-              <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-                <img src={require("../webb-imgs/jwst4.jpg")} alt="auroras" />
               </div>
             </div>
           </Slide>
