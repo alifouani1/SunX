@@ -23,11 +23,11 @@ const Home = () => {
         </div>
         <div className="section-1-img">
           <div className="img">
-            <img
+            {/* <img
               src={require("../webb-imgs/auroras.jpg")}
               width={100}
               height={100}
-            />
+            /> */}
           </div>
         </div>
       </div>

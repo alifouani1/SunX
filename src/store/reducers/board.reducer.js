@@ -2,7 +2,7 @@ import { SET_BOARD_DIMENSIONS } from "../constants";
 
 const defaultState = {
   rows: 3,
-  columns: 3
+  columns: 3 
 };
 
 const boardReducer = (state = defaultState, action) => {

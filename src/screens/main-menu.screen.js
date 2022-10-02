@@ -12,12 +12,13 @@ const Heading = styled.h1`
 
 const Container = styled.div`
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 100px);
+  /* height: 100vh; */
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 3em;
 `;
 
 const ButtonsContainer = styled.div`

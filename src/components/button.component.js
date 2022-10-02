@@ -12,6 +12,7 @@ export const Button = styled.button`
   transition: all 0.2s;
   color: white;
   outline: 0;
+  max-width: 10rem
 
   &:hover {
     background: linear-gradient(to top, dodgerblue, #03a9f4);

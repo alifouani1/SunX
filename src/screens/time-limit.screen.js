@@ -26,7 +26,7 @@ const ErrorText = styled.h2`
 export const TimeLimitScreen = () => {
   const areTilesAligned = useTilesPositionStatus();
   const dispatch = useDispatch();
-  const [timeLeft, startTimer, pauseTimer] = useTimer(30); // seconds
+  const [timeLeft, startTimer, pauseTimer] = useTimer(100); // seconds
   const [isGameStarted, setIsGameStarted] = useState(false);
 
   useEffect(() => {
@@ -54,15 +54,15 @@ export const TimeLimitScreen = () => {
 
         {areTilesAligned ? (
           <>
-            <h1 style={{ color: "green" }}>Woah! You're a Pro😃👍</h1>
-            <Link to="/">
+            <h1 style={{ color: "green" }}>Well Done!</h1>
+            <Link to="/puzzle-game">
               <Button>New Game</Button>
             </Link>
           </>
         ) : timeLeft === 0 ? (
           <>
-            <ErrorText>Mission Failed, We'll Get 'Em Next Time</ErrorText>
-            <Link to="/">
+            <ErrorText>Game over!</ErrorText>
+            <Link to="/puzzle-game">
               <Button>New Game</Button>
             </Link>
           </>
